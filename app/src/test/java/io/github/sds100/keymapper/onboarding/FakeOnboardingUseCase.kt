@@ -26,6 +26,7 @@ class FakeOnboardingUseCase : OnboardingUseCase {
 
     override var shownParallelTriggerOrderExplanation: Boolean = false
     override var shownSequenceTriggerExplanation: Boolean = false
+    override var shownKeyCodeToScanCodeTriggerExplanation: Boolean = false
     override val showAssistantTriggerFeatureNotification: Flow<Boolean> = MutableStateFlow(false)
 
     override fun showedAssistantTriggerFeatureNotification() {}
